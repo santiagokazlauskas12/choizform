@@ -12,7 +12,9 @@ interface Props {
 const Header: React.FC<Props> = ({ step }) => {
   const router = useRouter();
   const params = useParams();
-  const { formId } = params;
+  const formId = Array.isArray(params.formId)
+    ? params.formId[0]
+    : params.formId;
 
   const handleBack = () => {
     const previousStep = Number(formId) - 1;
