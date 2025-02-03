@@ -8,6 +8,7 @@ export default function Home() {
           src="/images/welcome.png"
           alt="Welcome Image"
           layout="fill"
+          priority
           objectFit="cover"
           className="absolute  lg:rounded-[60px] inset-0"
         />

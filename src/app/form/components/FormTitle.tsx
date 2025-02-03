@@ -5,14 +5,14 @@ interface FormTitleProps {
 
 const FormTitle: React.FC<FormTitleProps> = ({ title, subtitle }) => {
   return (
-    <div className="w-full mt-8 ">
+    <div className="w-full mt-8 mb-4">
       {title && (
         <h1 className="font-larsseitMedium text-stepTitle text-left mb-2 text-[20px] leading-[24px]">
           {title}
         </h1>
       )}
       {subtitle && (
-        <h2 className="text-left font-larsseitRegular text-[14px] leading-[20px] text-textGray mb-4">
+        <h2 className="text-left font-larsseitRegular text-[14px] leading-[20px] text-textGray ">
           {subtitle}
         </h2>
       )}

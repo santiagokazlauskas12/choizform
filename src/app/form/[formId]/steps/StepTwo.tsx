@@ -40,8 +40,8 @@ const StepTwo: React.FC = ({}) => {
     <>
       <div className="max-w-lg mx-auto w-[329px] rounded-lg h-full animate-slide-in">
         <FormTitle
-          title="¿Tienes o has tenido alguna de estas condiciones de salud mental?"
-          subtitle="Selecciona todas las opciones que apliquen."
+          title="¿Hay antecedentes de caída del cabello en tu familia?"
+          subtitle=""
         />
         <div className="flex flex-col mb-4 gap-4 justify-center items-center">
           {Object.values(stepTwoData).map((checkbox: IStepData) => (

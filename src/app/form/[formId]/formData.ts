@@ -153,8 +153,7 @@ export const stepFourFormData: IQuestions = {
 export const stepFiveFormData: IStepFiveData = {
   minoxidilCapsulas: {
     title: "Minoxidil® Cápsulas",
-    subTitle:
-      "Dutasterida 0.1% + Minoxidil 5 % + Tretinoína 1% + Hidrocortisona 1%",
+    subTitle: "Minoxidil 2.5 mg + Biotina 2.5 mgs",
     img: "/images/minoxidilCapsulas.png",
   },
   dutasterideCapsulas: {
@@ -166,6 +165,6 @@ export const stepFiveFormData: IStepFiveData = {
     title: "DUTAXIDIL® Gel",
     subTitle:
       "Dutasterida 0.1% + Minoxidil 5 % + Tretinoína 1% + Hidrocortisona 1%",
-    img: "/images/dutaxtedilCapsulas.png",
+    img: "/images/dutaxtedilGel.png",
   },
 };
