@@ -1,17 +1,12 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { fetchMedicationsQuestions } from "@/app/api/medicationsQuestions";
-import { MedicationQuestionsResponse } from "@/app/api/types/medicationsQuestions";
+import { IMedicationQuestion } from "@/app/api/types/medicationsQuestions";
 import Loader from "./Loader";
-
-interface FAQItem {
-  question: string;
-  answer: string;
-}
 
 const FAQ: React.FC = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
-  const [faqs, setFaqs] = useState<MedicationQuestionsResponse | []>([]);
+  const [faqs, setFaqs] = useState<IMedicationQuestion[] | []>([]);
   const [error, setError] = useState(false);
   const [loading, setLoading] = useState(true);
   const toggleAnswer = (index: number) => {
@@ -38,6 +33,13 @@ const FAQ: React.FC = () => {
 
   if (loading) {
     return <Loader />;
+  }
+
+  if (error) {
+    <div className="bg-red-500 text-white p-4 rounded-lg shadow-md">
+      <strong className="font-semibold">Error:</strong> Algo salió mal. Por
+      favor, inténtalo de nuevo.
+    </div>;
   }
 
   return (

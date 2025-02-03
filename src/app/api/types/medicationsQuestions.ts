@@ -3,7 +3,3 @@ export interface IMedicationQuestion {
   question: string;
   answer: string;
 }
-
-export interface MedicationQuestionsResponse {
-  response: IMedicationQuestion[];
-}
