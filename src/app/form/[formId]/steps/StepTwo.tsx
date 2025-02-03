@@ -4,7 +4,6 @@ import FormTitle from "../../components/FormTitle";
 import { useFormContext } from "@/app/context/FormContext";
 import { IStepData } from "../types/interfases";
 import { useRouter } from "next/navigation";
-import { isChecked } from "../../utils";
 import Loader from "../../components/Loader";
 
 const StepTwo: React.FC = ({}) => {
@@ -18,9 +17,7 @@ const StepTwo: React.FC = ({}) => {
       checkbox2: { ...prevStates.checkbox2, isChecked: id === "checkbox2" },
       checkbox3: { ...prevStates.checkbox3, isChecked: id === "checkbox3" },
     }));
-    if (isChecked(stepTwoData)) {
-      handleNextStep();
-    }
+    handleNextStep();
   };
   useEffect(() => {
     if (stepTwoData) {

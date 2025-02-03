@@ -51,7 +51,7 @@ const StepThree: React.FC = ({}) => {
         </div>
       </div>
       {isChecked(stepThreeData) && (
-        <div className="absolute mt-10 bottom-4 max-w-lg mx-auto w-[329px]">
+        <div className="absolute  bottom-4 max-w-lg mx-auto w-[329px]">
           <Button label="Siguiente" onClick={handleNextStep} />
         </div>
       )}

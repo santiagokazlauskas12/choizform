@@ -7,7 +7,7 @@ export const isChecked = (stepData: IQuestions) => {
 
 export const handleCheckboxChange = (
   id: string,
-  setter: Dispatch<SetStateAction<{ [key: string]: IStepData }>>, // El setter de estado
+  setter: Dispatch<SetStateAction<{ [key: string]: IStepData }>>,
   specialCheck: string
 ) => {
   setter((prevStates) => {

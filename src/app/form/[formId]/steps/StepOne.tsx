@@ -18,6 +18,7 @@ const StepOne: React.FC = ({}) => {
 
   useEffect(() => {
     if (stepOneData) {
+      setTextValue(stepOneData.checkbox4.text);
       setLoading(false);
     }
   }, [stepOneData]);
@@ -56,7 +57,7 @@ const StepOne: React.FC = ({}) => {
           title="¿Tienes algún problema en el cuero cabelludo?"
           subtitle="Selecciona todas las opciones que apliquen."
         />
-        <div className="flex flex-col mb-4 gap-4 justify-center items-center">
+        <div className="flex flex-col mb-8 gap-4 justify-center items-center">
           {Object.values(stepOneData).map((checkbox: IStepData) => (
             <Checkbox
               key={checkbox.id}
@@ -80,7 +81,14 @@ const StepOne: React.FC = ({}) => {
         </div>
       </div>
       {isChecked(stepOneData) && (
-        <div className="absolute  bottom-4 max-w-lg mx-auto w-[329px]">
+        <div
+          className={`${
+            stepOneData.checkbox4.isChecked
+              ? "relative mt-8 bottom-4 max-w-lg mx-auto w-[329px]"
+              : "absolute  bottom-4 max-w-lg mx-auto w-[329px]"
+          }`}
+        >
+          {" "}
           <Button label="Siguiente" onClick={handleNextStep} />
         </div>
       )}

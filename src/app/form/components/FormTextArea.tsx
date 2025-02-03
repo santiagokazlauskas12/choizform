@@ -15,7 +15,7 @@ const FormTextArea: React.FC<FormTextAreaProps> = ({
   onChange,
 }) => {
   return (
-    <div className="w-[328px] mt-[21px]  rounded-lg h-full">
+    <div className="w-[328px] mt-[21px] mb-4  rounded-lg h-full">
       <p className="font-larsseitMedium pb-[13px] text-[12px] leading-[12px] text-textGray">
         {title}
       </p>
