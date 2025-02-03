@@ -1,5 +1,5 @@
 import Image from "next/image";
-import WelcomeBox from "./components/WelcomeBox";
+import WelcomeBox from "../components/WelcomeBox";
 export default function Home() {
   return (
     <div className="w-full  h-screen flex flex-col items-center justify-between relative">

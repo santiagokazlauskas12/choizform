@@ -15,7 +15,93 @@
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
+  color: black;
+  background: white;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Larsseit fonts */
+
+@font-face {
+  font-family: "Larsseit Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("/fonts/Larsseit/LarsseitItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Larsseit Thin";
+  font-style: normal;
+  font-weight: normal;
+  src: url("/fonts/Larsseit/LarsseitThin.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Larsseit Thin Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("/fonts/Larsseit/LarsseitThinItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Larsseit Light Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("/fonts/Larsseit/LarsseitLightItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Larsseit Light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("/fonts/Larsseit/LarsseitLight.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Larsseit Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: url("/fonts/Larsseit/LarsseitMedium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Larsseit Medium Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("/fonts/Larsseit/LarsseitMediumItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Larsseit Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("/fonts/Larsseit/LarsseitBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Larsseit Bold Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("/fonts/Larsseit/LarsseitBoldItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Larsseit ExtraBold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("/fonts/Larsseit/LarsseitExtraBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Larsseit ExtraBold Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("/fonts/Larsseit/LarsseitExtraBoldItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "larsseitregular";
+  src: url("/fonts/Larsseit/larsseitRegular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
